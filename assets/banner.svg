@@ -1,166 +1,175 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
     <!-- Background Gradients -->
-    <linearGradient id="soc2-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b1120" />
-      <stop offset="50%" stop-color="#080d1a" />
-      <stop offset="100%" stop-color="#030712" />
+    <linearGradient id="soc2BgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#080c14" />
     </linearGradient>
 
-    <!-- Title Gradient -->
-    <linearGradient id="soc2-title-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <!-- Vibrant Gradient for Title & Nodes -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38bdf8" />
-      <stop offset="45%" stop-color="#818cf8" />
+      <stop offset="50%" stop-color="#818cf8" />
       <stop offset="100%" stop-color="#c084fc" />
     </linearGradient>
 
-    <!-- Card Background -->
-    <linearGradient id="soc2-card-bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.9" />
+    <linearGradient id="accentGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.85" />
       <stop offset="100%" stop-color="#0f172a" stop-opacity="0.95" />
     </linearGradient>
 
-    <!-- Scan Beam Gradient -->
-    <linearGradient id="soc2-scan-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0" />
-      <stop offset="50%" stop-color="#38bdf8" stop-opacity="0.8" />
-      <stop offset="100%" stop-color="#818cf8" stop-opacity="0" />
-    </linearGradient>
+    <!-- Subtle Glow Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Technical Background Grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1" />
+    </pattern>
   </defs>
 
-  <!-- Deep Background -->
-  <rect width="1200" height="360" rx="14" fill="url(#soc2-bg)" />
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 0.25; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.05); }
+    }
+    @keyframes floatOrb1 {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(25px, -15px); }
+    }
+    @keyframes floatOrb2 {
+      0%, 100% { transform: translate(0px, 0px); }
+      50% { transform: translate(-20px, 20px); }
+    }
+    @keyframes dash {
+      to { stroke-dashoffset: -400; }
+    }
+    @keyframes textGlow {
+      0%, 100% { filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.35)); }
+      50% { filter: drop-shadow(0 0 20px rgba(192, 132, 252, 0.6)); }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+    .orb-1 { animation: floatOrb1 10s ease-in-out infinite, pulse 8s ease-in-out infinite; transform-origin: 980px 120px; }
+    .orb-2 { animation: floatOrb2 12s ease-in-out infinite, pulse 9s ease-in-out infinite; transform-origin: 160px 260px; }
+    .telemetry-flow { stroke-dasharray: 8 6; animation: dash 22s linear infinite; }
+    .telemetry-flow-fast { stroke-dasharray: 6 4; animation: dash 14s linear infinite; }
+    .main-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; animation: textGlow 6s ease-in-out infinite; }
+    .sub-title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 400; }
+    .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 11px; }
+    .pulse-dot { animation: blink 2s ease-in-out infinite; }
+  </style>
 
-  <!-- Grid Blueprint Pattern -->
-  <g stroke="#1e293b" stroke-width="0.8" opacity="0.6">
-    <line x1="0" y1="60" x2="1200" y2="60" />
-    <line x1="0" y1="120" x2="1200" y2="120" />
-    <line x1="0" y1="180" x2="1200" y2="180" />
-    <line x1="0" y1="240" x2="1200" y2="240" />
-    <line x1="0" y1="300" x2="1200" y2="300" />
+  <!-- Background Base -->
+  <rect width="1200" height="360" rx="16" fill="url(#soc2BgGradient)" />
+  <rect width="1200" height="360" rx="16" fill="url(#grid)" />
 
-    <line x1="120" y1="0" x2="120" y2="360" />
-    <line x1="280" y1="0" x2="280" y2="360" />
-    <line x1="440" y1="0" x2="440" y2="360" />
-    <line x1="600" y1="0" x2="600" y2="360" />
-    <line x1="760" y1="0" x2="760" y2="360" />
-    <line x1="920" y1="0" x2="920" y2="360" />
-    <line x1="1080" y1="0" x2="1080" y2="360" />
-  </g>
+  <!-- Animated Ambient Orbs in Deep Background -->
+  <circle class="orb-1" cx="1020" cy="130" r="150" fill="url(#primaryGlow)" opacity="0.25" filter="url(#glow)" />
+  <circle class="orb-2" cx="140" cy="270" r="120" fill="url(#accentGlow)" opacity="0.2" filter="url(#glow)" />
 
-  <!-- Dynamic SVG Animated Circuit Lines in Right Background -->
-  <g opacity="0.65">
-    <path d="M 680 50 Q 860 50 940 140 T 1160 140" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="10 6">
-      <animate attributeName="stroke-dashoffset" from="320" to="0" dur="8s" repeatCount="indefinite" />
-    </path>
-    <path d="M 620 310 Q 820 300 900 220 T 1170 210" fill="none" stroke="#818cf8" stroke-width="2" stroke-dasharray="8 6">
-      <animate attributeName="stroke-dashoffset" from="0" to="320" dur="10s" repeatCount="indefinite" />
-    </path>
-    <path d="M 750 360 C 840 270 870 90 1020 70" fill="none" stroke="#c084fc" stroke-width="1.5" stroke-dasharray="6 6">
-      <animate attributeName="stroke-dashoffset" from="240" to="0" dur="7s" repeatCount="indefinite" />
-    </path>
-  </g>
+  <!-- Dynamic Security & Compliance Control Artwork on Right -->
+  <g opacity="0.9">
+    <!-- Telemetry Control Panel Container -->
+    <rect x="760" y="50" width="380" height="260" rx="14" fill="#131d31" stroke="rgba(255,255,255,0.08)" stroke-width="1.5" />
+    
+    <!-- Flow Circuits & Grid Lines -->
+    <line x1="790" y1="105" x2="1110" y2="105" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    <line x1="790" y1="180" x2="1110" y2="180" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    <line x1="790" y1="255" x2="1110" y2="255" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
 
-  <!-- Ambient Radar Pulse / Orbit in Background Flank (SMIL Animated) -->
-  <g transform="translate(1040, 180)">
-    <circle cx="0" cy="0" r="130" fill="none" stroke="#38bdf8" stroke-width="1.2">
-      <animate attributeName="r" values="100;140;100" dur="6s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.1;0.4;0.1" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="85" fill="none" stroke="#818cf8" stroke-width="1" opacity="0.3">
-      <animate attributeName="r" values="75;95;75" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="4s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="0" cy="0" r="45" fill="none" stroke="#c084fc" stroke-width="1" opacity="0.4" />
-    <!-- Rotating Node on Orbit -->
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="12s" repeatCount="indefinite" />
-      <circle cx="85" cy="0" r="4.5" fill="#38bdf8" />
+    <!-- Card 1: Continuous Control Monitoring -->
+    <g transform="translate(785, 66)">
+      <rect width="330" height="60" rx="8" fill="url(#cardGrad)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4" />
+      <circle class="pulse-dot" cx="24" cy="30" r="5" fill="#10b981" />
+      <text x="40" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1">CONTINUOUS CONTROL POSTURE</text>
+      <text x="40" y="44" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">SOC 2 Type II: 100% Passing</text>
     </g>
+
+    <!-- Card 2: Automated Evidence Harvester -->
+    <g transform="translate(785, 142)">
+      <rect width="330" height="60" rx="8" fill="url(#cardGrad)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4" />
+      <circle class="pulse-dot" cx="24" cy="30" r="5" fill="#38bdf8" />
+      <text x="40" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1">EVIDENCE HARVESTING PIPELINE</text>
+      <text x="40" y="44" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">AWS • GCP • GitHub • Okta Synced</text>
+    </g>
+
+    <!-- Card 3: Real-Time Audit Readiness -->
+    <g transform="translate(785, 218)">
+      <rect width="330" height="60" rx="8" fill="url(#cardGrad)" stroke="#c084fc" stroke-width="1" stroke-opacity="0.4" />
+      <circle class="pulse-dot" cx="24" cy="30" r="5" fill="#c084fc" />
+      <text x="40" y="25" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1">AUDIT READINESS GATEWAY</text>
+      <text x="40" y="44" fill="#34d399" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700">Zero Drift • Cryptographic Log</text>
+    </g>
+
+    <!-- Dynamic Flow Waves Behind / Underneath Cards -->
+    <path class="telemetry-flow" d="M 760 135 Q 920 160, 1050 120 T 1140 100" fill="none" stroke="#38bdf8" stroke-width="2.5" opacity="0.6" filter="url(#softGlow)" />
+    <path class="telemetry-flow-fast" d="M 760 210 Q 890 240, 1010 190 T 1140 180" fill="none" stroke="#c084fc" stroke-width="2" opacity="0.5" filter="url(#softGlow)" />
   </g>
 
-  <!-- Floating Dynamic Telemetry Cards (Positioned in Right Background) -->
-  <!-- Card 1: Continuous Control -->
-  <g transform="translate(860, 48)">
-    <animateTransform attributeName="transform" type="translate" values="860,48; 860,42; 860,48" dur="4.5s" repeatCount="indefinite" />
-    <rect width="270" height="64" rx="10" fill="url(#soc2-card-bg)" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.5" />
-    <circle cx="26" cy="32" r="6" fill="#10b981">
-      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite" />
-    </circle>
-    <text x="44" y="27" fill="#94a3b8" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" letter-spacing="1">CONTINUOUS MONITORING</text>
-    <text x="44" y="48" fill="#f8fafc" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700">SOC 2 Type II: 100% Valid</text>
-  </g>
-
-  <!-- Card 2: Evidence Automation -->
-  <g transform="translate(885, 146)">
-    <animateTransform attributeName="transform" type="translate" values="885,146; 885,152; 885,146" dur="5.5s" repeatCount="indefinite" />
-    <rect width="265" height="64" rx="10" fill="url(#soc2-card-bg)" stroke="#818cf8" stroke-width="1" stroke-opacity="0.5" />
-    <rect x="18" y="22" width="20" height="20" rx="4" fill="#818cf8" fill-opacity="0.2" />
-    <path d="M 23 32 L 27 36 L 33 28" fill="none" stroke="#818cf8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
-    <text x="48" y="27" fill="#94a3b8" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" letter-spacing="1">EVIDENCE HARVESTER</text>
-    <text x="48" y="48" fill="#f8fafc" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700">Autonomous Sync Active</text>
-  </g>
-
-  <!-- Card 3: Audit Readiness -->
-  <g transform="translate(850, 246)">
-    <animateTransform attributeName="transform" type="translate" values="850,246; 850,240; 850,246" dur="5s" repeatCount="indefinite" />
-    <rect width="280" height="64" rx="10" fill="url(#soc2-card-bg)" stroke="#10b981" stroke-width="1" stroke-opacity="0.5" />
-    <circle cx="26" cy="32" r="6" fill="#10b981" />
-    <text x="44" y="27" fill="#94a3b8" font-size="11" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" letter-spacing="1">AUDIT READINESS GATE</text>
-    <text x="44" y="48" fill="#34d399" font-size="14" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700">Zero Configuration Drift</text>
-  </g>
-
-  <!-- Dynamic Scanning Beam passing across Telemetry Cards -->
-  <g transform="translate(840, 40)">
-    <rect x="0" y="0" width="300" height="2" fill="url(#soc2-scan-grad)">
-      <animate attributeName="y" values="0;270;0" dur="4s" repeatCount="indefinite" />
-      <animate attributeName="opacity" values="0;0.7;0" dur="4s" repeatCount="indefinite" />
-    </rect>
-  </g>
-
-  <!-- FOREGROUND: Clear, Crisp High-Contrast Typography & Core Identity -->
-  <g transform="translate(56, 0)">
-    <!-- Pill Badge -->
+  <!-- Left Content Area (Prominently Foregrounded) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Pill Badge -->
     <g transform="translate(0, 52)">
-      <rect width="320" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1.2" />
-      <circle cx="16" cy="16" r="4.5" fill="#38bdf8">
-        <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite" />
-      </circle>
-      <text x="30" y="21" fill="#38bdf8" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="700" letter-spacing="1.2">AUTONOMOUS COMPLIANCE 2026</text>
+      <rect width="290" height="30" rx="15" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.35)" stroke-width="1.2" />
+      <circle class="pulse-dot" cx="15" cy="15" r="4" fill="#38bdf8" />
+      <text class="badge-text" x="28" y="19" fill="#38bdf8" letter-spacing="1">AUTONOMOUS COMPLIANCE 2026</text>
     </g>
 
-    <!-- Main Title -->
-    <text x="0" y="142" font-size="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" fill="#ffffff" letter-spacing="-0.5">
+    <!-- Main Title (Foregrounded with Glow) -->
+    <text class="main-title" x="0" y="132" font-size="38" fill="#ffffff" letter-spacing="-0.5">
       Awesome Autonomous
     </text>
-    <text x="0" y="196" font-size="42" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" fill="url(#soc2-title-grad)" letter-spacing="-0.5">
+    <text class="main-title" x="0" y="176" font-size="38" fill="url(#primaryGlow)" letter-spacing="-0.5">
       SOC 2 Compliance Managers
     </text>
 
-    <!-- Subtitle & Description -->
-    <text x="0" y="244" font-size="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="400" fill="#cbd5e1">
-      Curated ecosystem of SaaS leaders &amp; open-source automation frameworks
-    </text>
-    <text x="0" y="272" font-size="15" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="500" fill="#94a3b8">
-      ⚡ Continuous Control Monitoring &nbsp;•&nbsp; 🛡️ Automated Evidence &nbsp;•&nbsp; 🚀 Audit-Ready Posture
+    <!-- Subtitle / Tagline -->
+    <text class="sub-title" x="0" y="214" font-size="16" fill="#94a3b8" letter-spacing="0.2">
+      Curated Ecosystem of SaaS Leaders, Self-Hosted Tools &amp; Continuous GRC
     </text>
 
-    <!-- Framework Tags/Pills -->
-    <g transform="translate(0, 302)">
-      <rect x="0" y="0" width="85" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
-      <text x="14" y="17" fill="#e2e8f0" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600">SOC 2</text>
+    <!-- Feature Tag Badges -->
+    <g transform="translate(0, 242)">
+      <!-- Tag 1 -->
+      <rect x="0" y="0" width="90" height="28" rx="7" fill="#1e293b" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text class="badge-text" x="12" y="18" fill="#cbd5e1">🛡️ SOC 2</text>
 
-      <rect x="95" y="0" width="105" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
-      <text x="108" y="17" fill="#e2e8f0" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600">ISO 27001</text>
+      <!-- Tag 2 -->
+      <rect x="100" y="0" width="110" height="28" rx="7" fill="#1e293b" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text class="badge-text" x="12" y="18" transform="translate(100,0)" fill="#cbd5e1">📋 ISO 27001</text>
 
-      <rect x="210" y="0" width="80" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
-      <text x="224" y="17" fill="#e2e8f0" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600">HIPAA</text>
+      <!-- Tag 3 -->
+      <rect x="220" y="0" width="85" height="28" rx="7" fill="#1e293b" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text class="badge-text" x="12" y="18" transform="translate(220,0)" fill="#cbd5e1">🏥 HIPAA</text>
 
-      <rect x="300" y="0" width="75" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
-      <text x="314" y="17" fill="#e2e8f0" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600">GDPR</text>
+      <!-- Tag 4 -->
+      <rect x="315" y="0" width="80" height="28" rx="7" fill="#1e293b" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text class="badge-text" x="12" y="18" transform="translate(315,0)" fill="#cbd5e1">🔒 GDPR</text>
 
-      <rect x="385" y="0" width="120" height="26" rx="6" fill="#1e293b" stroke="#475569" stroke-width="0.8"/>
-      <text x="398" y="17" fill="#e2e8f0" font-size="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="600">NIST 800-53</text>
+      <!-- Tag 5 -->
+      <rect x="405" y="0" width="130" height="28" rx="7" fill="#1e293b" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+      <text class="badge-text" x="12" y="18" transform="translate(405,0)" fill="#cbd5e1">⚡ Auto-Evidence</text>
     </g>
+
+    <!-- Metrics Line -->
+    <text class="sub-title" x="0" y="306" font-size="13" fill="#64748b">
+      Continuous Control Monitoring • Audit Readiness • Verified SaaS Pricing &amp; Open-Source Repos
+    </text>
   </g>
 </svg>
