@@ -1,213 +1,134 @@
-# Awesome-Autonomous-SOC2-Compliance-Managers
+# Awesome Autonomous SOC 2 Compliance Managers & Security GRC Platforms
 
-## Top Autonomous SOC 2 Compliance Managers Ecosystem
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Tracked Frameworks](https://img.shields.io/badge/Frameworks-SOC2%20%7C%20ISO27001%20%7C%20HIPAA%20%7C%20GDPR-blue)](https://github.com/ishandutta2007/Awesome-Autonomous-SOC2-Compliance-Managers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
-
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-
-*Focused on Continuous Control Monitoring, Evidence Automation & Audit Readiness*  
-
-**Last updated: March 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Autonomous SOC 2 Compliance Managers**. These tools continuously track internal security controls, collect evidence automatically, and maintain audit-ready posture—reducing the manual effort of preparing for SOC 2 Type II audits.
-
-
-
-**Examples** include Vanta, Drata, Sprinto, Secureframe, Thoropass, Hyperproof, Scrut Automation, Tugboat Logic, Apptega, and Anecdotes (the category leaders).
-
-
-
-**Open-source emphasis**: This section is heavily expanded with every major active project for self-hosting, transparent control mapping, and open evidence collection—ideal for startups, engineering-led teams, and developers seeking vendor-independent compliance automation.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-
-
-- **[Vanta](https://www.vanta.com/)**  
-
-  Market leader for SMB SaaS compliance automation. Covers 35+ frameworks including SOC 2, ISO 27001, HIPAA, GDPR, PCI DSS, and HITRUST. Features 400+ integrations, continuous monitoring with real-time alerts, AI-powered questionnaire automation (95% acceptance rate per Vanta), and personnel compliance tracking. Pricing is quote-based, typically $15,000–$35,000/year for 50–200 employee companies on a single framework, with median contracts around $20,000 annually .
-
-
-
-- **[Drata](https://drata.com/)**  
-
-  Strongest alternative for DevOps-heavy teams with 180+ integrations focused on developer tooling. Covers 20+ frameworks including SOC 2, ISO 27001, HIPAA, GDPR, PCI DSS, CCPA, and CMMC. Features AI Compliance Assistant for control mapping and automated questionnaire responses. No per-seat pricing. Approximate tiers: Foundation ($7,500–$15,000/year, one framework, under 50 employees), Advanced ($15,000–$25,000/year, two to three frameworks, 50–250 employees), Enterprise ($25,000–$100,000+/year, unlimited frameworks). Implementation fee of $10,000–$25,000 is separate .
-
-
-
-- **[Sprinto](https://sprinto.com/)**  
-
-  Headquartered in India, strong presence in APAC and EMEA markets. Covers SOC 2, ISO 27001, HIPAA, and GDPR at a lower price point than Vanta or Drata. Features guided workflows that walk first-time users through the compliance process step by step. Smaller auditor network and fewer cloud integrations compared to incumbents. Best fit for early-stage companies (under 50 employees) in international markets willing to do manual evidence collection .
-
-
-
-- **[Secureframe](https://secureframe.com/)**  
-
-  Broadest framework coverage in the category—35+ frameworks including SOC 2, ISO 27001, ISO 27701, HIPAA, GDPR, FedRAMP, PCI DSS, CMMC, MVSP, and Microsoft SSPA. Comply AI suite includes Remediation (infrastructure-as-code fixes for AWS, Azure, GCP), Evidence Validation (catches mismatched/outdated evidence before auditors see it), and Risk (inherent and residual risk scoring). User Access Reviews launched April 2026. MCP Server for AI-driven compliance insights. Pricing starts around $7,000/year for smaller companies, $12,000–$20,000/year for Complete tier .
-
-
-
-- **[Thoropass](https://thoropass.com/)**  
-
-  Bundled auditor + platform experience (formerly Laika). Merged compliance platform with an audit firm—you get the GRC tool and the auditor from the same vendor, eliminating back-and-forth between separate systems. Covers SOC 2, ISO 27001, HIPAA, and PCI DSS. Trade-off is less flexibility—you use their auditor, timeline, and process .
-
-
-
-- **[Hyperproof](https://hyperproof.io/)**  
-
-  Compliance operations platform with framework mapping, evidence management, and risk assessment. Supports SOC 2, ISO 27001, HIPAA, GDPR, and other frameworks.
-
-
-
-- **[Scrut Automation](https://scrut.io/)**  
-
-  Compliance automation platform focused on continuous control monitoring and evidence collection for SOC 2, ISO 27001, and GDPR.
-
-
-
-- **[Tugboat Logic (OneTrust)](https://www.onetrust.com/)**  
-
-  Compliance automation platform acquired by OneTrust. Features policy management, control mapping, and audit readiness for SOC 2 and ISO 27001.
-
-
-
-- **[Apptega](https://apptega.com/)**  
-
-  Cybersecurity compliance management platform with framework mapping, risk assessment, and evidence collection for multiple standards.
-
-
-
-- **[Anecdotes](https://www.anecdotes.ai/)**  
-
-  Compliance automation platform with AI-powered evidence collection and control monitoring for SOC 2, ISO 27001, and other frameworks.
-
-
-
-## Open-Source GitHub Projects
-
-
-
-- **[Comp AI](https://github.com/trycompai/comp)**  
-
-  Open-source compliance platform (AGPLv3, open-core model) positioning as a direct alternative to Vanta and Drata. Automates evidence collection, policy management, and control implementation for **SOC 2, ISO 27001, HIPAA, and GDPR**. Core platform is roughly 99% open source; a small enterprise portion carries a commercial license. **AI Policy Editor** drafts and updates security policies through natural language interface with diff viewer and non-destructive workflow. **Automated Evidence** lets users describe what needs verification in plain language and the platform builds recurring collection automation. **Device Agent** runs in system tray checking employee devices for disk encryption, antivirus, password policy, and screen lock timeout—supports macOS 14+, Windows 10+, and Ubuntu 20.04+. Cloud integrations connect to AWS, GCP, and Azure. API exposed for internal tools. **Self-hosting documented**—the floor can be your own infrastructure rather than a contract .
-
-
-
-- **[Openlane Core](https://github.com/theopenlane/core)**  
-
-  Open-source compliance automation platform (297 GitHub stars) providing a **system of record for compliance programs**—people, systems, and vendors in scope; policies and controls that govern them; and evidence that proves it. Supports **SOC 2, ISO 27001, NIST 800-53, GDPR, and more**. Features compliance management with editors, approvals, comments, and full history on every object. **Frameworks and standards** with importable control sets and cross-framework mapping (one control satisfies multiple frameworks). **Registry** automatically imports personnel from directory, entities/vendors from CRM, assets from CMDB. **Exposure** with automated domain scanning and vulnerability integrations (GitHub, AWS Security Hub, GCP Security Command Center). **Automation** with Google Drive, GitHub, Entra ID, AWS, GCP integrations. **Trust Center** customizable branded portal. Built with PostgreSQL, Redis, S3-compatible object storage. Free cloud tier for first 30 days, then pay only for modules needed. Self-hostable with Go, Docker, and Task .
-
-
-
-- **[Blackfyre](https://github.com/blackfyre-security/blackfyre)**  
-
-  Open-source multi-cloud compliance and security platform scanning **AWS, Azure, and GCP against 678 controls across 9 frameworks**—**SOC 2, ISO 27001, HIPAA, GDPR, PCI-DSS, DPDPA, ISO 42001, PDPPL, NIST 800-53**. Features 40+ SDK-based auditors plus Prowler and IaC scanning (Checkov, Semgrep, Bandit) as containerized scanners. **AI-assisted analysis** with gap analysis, MITRE ATT&CK mapping, remediation suggestions, and security copilot (Claude via Anthropic API or AWS Bedrock)—all AI features degrade gracefully to heuristics when no key configured. **Evidence vault** with SHA-256 content hashing and explicit hashSource on every record. S3 Object Lock (WORM, COMPLIANCE mode) on AWS deployments. **Multi-tenancy** with Postgres row-level security below ORM, per-request tenant-bound connections. Enterprise auth with JWT + MFA, Google SSO, SAML, SCIM provisioning, API keys, auditor-scoped access. Zero-install via GitHub Codespaces. Full local stack with Docker Compose .
-
-
-
-- **[TrustOps Security Data Lake](https://pypi.org/project/trustops-security-data-lake/)**  
-
-  Open-source, self-hosted compliance automation (Apache-2.0, no per-seat license). **20 framework packs, 94 reusable safeguards, 21 control families, 2,245 catalogued requirements**. Supports SOC 2, ISO 27001/27017/27701/42001, NIST CSF 2.0, NIST AI RMF, CIS Controls, CMMC 2.0, EU AI Act, NIST 800-53/800-171, FedRAMP, HIPAA, PCI DSS, GDPR, NIS2, DORA. Features **common control framework** where one safeguard serves multiple frameworks. **Assessment results** (Pass, Fail, Stale, Not Evaluated) from collected evidence. **Audit workflow** with audit room, readiness, frozen assessments, trust-center shares, access reviews, OSCAL export. **Automation** with versioned API, CLI, MCP server, CI posture gate, webhooks. **Integrations** with read-only posture roles for AWS/Azure/GCP. Docker Compose, Helm chart, EKS Terraform deployment. Server mode requires authentication (OIDC, SAML, or API keys) .
-
-
-
-- **[Evidentia](https://github.com/Polycentric-Labs/evidentia)**  
-
-  Open-source Python GRC tool (PyPI installable) with **OSCAL-native end-to-end compliance automation**. Features **97 bundled framework catalogs** including NIST 800-53 Rev 5 (full 1,196 controls + baselines), FedRAMP (Rev 5 baselines + CR26 Key Security Indicators + 180 provider-facing Requirements), CMMC 2.0, ISO 27001, CSF 2.0, EU AI Act, DORA, NIS2, GDPR, OpenSSF OSPS Baseline, FFIEC stack, and all 15 comprehensive US state privacy laws. **Cryptographic evidence chain** with Sigstore keyless signing on Assessment Results, PEP 740 attestations on every wheel, SLSA Provenance v1 on container, CycloneDX 1.7 SBOM on every release. Emits **OSCAL Assessment Results, SARIF for CI gates, OCSF Compliance + Detection Findings for SIEMs, CycloneDX VEX**. **MCP tools** for AI agents (Claude Desktop, Claude Code, Cursor, Copilot CLI) with signed output envelopes. `pip install evidentia`. CLI: `evidentia gap analyze`, `evidentia catalog list`, `evidentia conmon ksi` (FedRAMP CR26 SDR emission) .
-
-
-
-- **[Comply (strongDM)](https://github.com/strongdm/comply)**  
-
-  Open-source compliance automation framework focused on SOC 2 (Apache-2.0). **2,000+ GitHub stars**. Provides a structured approach to managing compliance documentation and evidence. **Note**: OpenSSF Scorecard is 2.4/10—the project is not actively maintained (0 commits/issues in last 90 days), has no security policy, no branch protection, no signed releases, and no SAST .
-
-
-
-- **[Privateer (OpenSSF)](https://github.com/privateerproj/privateer)**  
-
-  AI-assisted security and compliance evaluation framework (OpenSSF Sandbox project under ORBIT Working Group). **Plugin-based evaluation harness** evaluating evidence and providing structured assessments (Pass, Fail, Needs Review) against control catalogs maintained separately in the Gemara ecosystem. **Deterministic checks run first**; optional LLM step reviews human-written evidence (security policies, governance docs) those checks can't parse. Anything still uncertain marked **Needs Review**—human makes final call. **OSPS Baseline** scanning via GitHub Repo plugin. Outputs machine-readable evaluation logs for compliance dashboards, audit workflows, and attestations. Originally developed by Sonatype, Revanite, and Microsoft; transitioning to neutral governance .
-
-
-
-### Additional Strong Open-Source Options
-
-
-
-- **[Probo](https://github.com/getprobo/probo)** — Open-source compliance platform (MIT) for SOC-2 readiness in ~20 hours. Tailored program, AI-powered policy generation, automated risk assessment, pre-filled vendor risk assessment. Free to use with no vendor lock-in. Go 1.21+, Node.js 22+, Docker. Early development (v0.89.1) focusing on core compliance engine, policy management, and evidence collection .
-
-- **[Comply (Openlane)](https://github.com/theopenlane/core)** — Core server and orchestration services behind Openlane cloud (same repo as Openlane Core above).
-
-- **[OpenCompliance](https://github.com/topics/soc2)** — Community projects for SOC 2 control automation and evidence collection.
-
-- Community **n8n** workflows for compliance evidence routing and audit alerting.
-
-
-
-**Frameworks for building custom systems**: Combine **Comp AI** for AI-driven policy and evidence automation with **Openlane Core** for full compliance system of record, **Blackfyre** for multi-cloud control scanning, **Evidentia** for OSCAL-native audit evidence, and **PostgreSQL** for persistence—creating a fully self-hosted, enterprise-grade SOC 2 compliance platform.
-
-
-
-## How to Contribute
-
-
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- SOC 2 compliance platforms handling control evidence must maintain audit trails and comply with relevant regulations.
-
-- **Open-source SOC 2 tools are maturing but require engineering effort.** Comp AI and Openlane provide substantial automation, but self-hosting means you own infrastructure, updates, and integration maintenance. The "free" tier has a real cost in engineering hours.
-
-- **No tool replaces auditor judgment.** Automated control monitoring and evidence collection are inputs to an audit, not a substitute for auditor review. A clean dashboard does not mean you're compliant.
-
-- **The OpenSSF Scorecard matters.** Comply (strongDM) has a 2.4/10 score and is not actively maintained . Before adopting any open-source compliance tool, check maintenance status, security policy, and release signing. Stale tools create compliance risk of their own.
-
-- Self-hosted open-source solutions require proper security hardening, backup strategies, and ongoing maintenance. Compliance platforms store sensitive evidence—they need the same security controls they're tracking.
-
-
+> A curated directory of leading SaaS platforms and open-source software for **Autonomous SOC 2 Compliance**, **Continuous Control Monitoring (CCM)**, **Automated Evidence Collection**, and **Audit-Ready GRC Automation**.
 
 ---
 
+## Overview
 
+Maintaining compliance across modern cloud and AI environments requires automated, continuous control evaluation rather than manual point-in-time spreadsheet audits. Autonomous SOC 2 compliance managers interface directly with cloud providers (AWS, GCP, Azure), identity providers (Okta, Google Workspace, Entra ID), CI/CD pipelines, and developer tooling (GitHub, GitLab, Jira) to continuously harvest audit evidence, flag misconfigurations, generate policies, and streamline SOC 2 Type I and Type II certifications.
 
-**Made for compliance engineers, security leaders, and developers building transparent SOC 2 automation solutions.**  
+---
 
-Let's make Autonomous SOC 2 Compliance Management more open, data-driven, and auditable.
+## Table of Contents
+
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS & Commercial Platforms](#saas--commercial-platforms)
+- [Open-Source GitHub Projects](#open-source-github-projects)
+- [How to Contribute](#how-to-contribute)
+- [Disclaimer](#disclaimer)
+
+---
+
+## Sector Overview & Market Dynamics
+
+The global dedicated SOC 2 compliance automation market reached approximately **$1.45 billion in 2024–2025** and is projected to expand to **$5.12 billion by 2033** at a **16.8% CAGR**, while the broader continuous compliance automation category is scaling rapidly at a **31.2% CAGR** toward **$3.1 billion by 2031**.
+
+The sector exhibits **moderate fragmentation with an emerging oligopoly** at the top: early pioneers like OneTrust, Vanta ($4.15B valuation, $300M+ ARR), and Drata ($2.0B valuation, $100M+ ARR) capture a dominant share of venture-funded enterprise and high-growth tech contracts, while specialized players and regional entrants (such as Secureframe, Thoropass, Sprinto, and Scrut Automation) capture niche workflows, managed services, and international segments alongside a rising wave of open-source self-hosted alternatives.
+
+---
+
+## SaaS & Commercial Platforms
+
+The table below compares leading commercial autonomous SOC 2 and GRC platforms, sorted in descending order by company size (valuation / ARR / total funding).
+
+| Product | Company Size (Valuation / ARR / Funding) | Pricing (Starting Tier / Contract) | Free Tier / Trial Limits | Key Capabilities & Target Audience |
+| :--- | :--- | :--- | :--- | :--- |
+| **[OneTrust (Tugboat Logic)](https://www.onetrust.com/)** | **$4.5B Valuation**<br>~$500M ARR ($1.13B Raised) | **$10,000/year** (Starting tier for foundational compliance module; enterprise suites scale $50k+) | **14-day free trial** with access to core privacy and assessment modules (no permanent free tier) | Enterprise Trust Intelligence, automated vendor risk management, and integrated compliance migration from Tugboat Logic. |
+| **[Vanta](https://www.vanta.com/)** | **$4.15B Valuation**<br>$300M+ ARR ($503M Raised) | **$7,500/year** (Starting tier for seed/early startups; typical contracts $15,000–$35,000/year) | **0 days (No public free trial)**; sandbox pilot/demo access provided during enterprise sales evaluation | Category market leader with 400+ cloud integrations, real-time control monitoring, and automated AI questionnaire exchange. |
+| **[Drata](https://drata.com/)** | **$2.0B Valuation**<br>$100M+ ARR ($328M Raised) | **$7,500/year** (Foundation tier for <50 employees, 1 framework; Advanced $15k–$25k/yr) | **0 days (No public free trial)**; private sandbox environments available through sales/partner qualification | DevOps-first automated evidence harvesting, custom automated control tests, and agentic GRC copilot. |
+| **[Thoropass](https://thoropass.com/)** | **$100M–$250M Est. Valuation**<br>$10M–$50M ARR ($98M Raised) | **$8,700/year** (Platform floor; bundled software + auditor package starts ~$14,500–$25,000/year) | **14-day free trial** restricted strictly to DDQ (Due Diligence Questionnaire) automation module (no free core tier) | All-in-one compliance software bundled directly with in-house audit and certification services (formerly Laika). |
+| **[Anecdotes](https://www.anecdotes.ai/)** | **~$200M+ Est. Valuation**<br>$10M–$30M ARR ($85M Raised) | **$16,000/year** (Starting annual contract floor; median enterprise contract ~$45,000/year) | **30-day proof-of-concept trial** upon sales qualification (no permanently free tier) | Data-driven GRC platform turning security infrastructure into structured compliance data with 230+ native connectors. |
+| **[Secureframe](https://secureframe.com/)** | **~$150M–$200M Est. Valuation**<br>$15M–$35M ARR ($79M Raised) | **$7,000/year** (Essentials tier for early startups; Complete tier runs $12,000–$20,000/year) | **Free tier available for standalone Trust Center** (up to 1 published trust page; 0-day trial on core compliance platform) | Automated remediation scripts (IaC for AWS/GCP/Azure), automated evidence validation, and built-in AI risk analysis. |
+| **[Hyperproof](https://hyperproof.io/)** | **~$120M–$180M Est. Valuation**<br>~$21.2M ARR ($67M Raised) | **$12,000/year** (Professional starting tier; Business tier scales $25,000–$43,000/year) | **0 days (No public free trial)**; requires scheduled custom guided product walkthrough and sandbox validation | Robust compliance operations engine focused on risk tracking, cross-framework control deduplication, and evidence health. |
+| **[Apptega](https://apptega.com/)** | **~$60M–$100M Est. Valuation**<br>~$9.7M ARR ($53M Raised) | **$8,000/year** (Starting tier based on selected frameworks and user count) | **14-day full free trial** with access to framework evaluation and compliance tracking without upfront credit card | Built specifically for internal security teams and MSPs/MSSPs managing multi-tenant compliance pipelines. |
+| **[Sprinto](https://sprinto.com/)** | **~$50M–$80M Est. Valuation**<br>~$4M–$10M ARR ($32.2M Raised) | **$6,000/year** (Starter tier for startups under 50 employees; scales $10,000–$18,000/year) | **0 days (No public free trial)**; product access offered via interactive live guided walkthrough | Highly structured step-by-step guided compliance workflows optimized for SMBs in APAC, EMEA, and North America. |
+| **[Scrut Automation](https://scrut.io/)** | **~$35M–$60M Est. Valuation**<br>~$3M–$8M ARR ($21M Raised) | **$10,000/year** (Starting tier for emerging companies; mid-market packages run $15,000–$30,000/year) | **0 days (No public free trial)**; self-guided interactive interactive product tour available without a live account | Continuous compliance tracking, cloud posture auditing, and vendor risk management with zero auditor seat fees. |
+
+---
+
+## Open-Source GitHub Projects
+
+Self-hosted and vendor-independent open-source tools for automating SOC 2 controls, scanning cloud security baselines, generating policies, and maintaining cryptographic audit evidence.
+
+Sorted in descending order by **GitHub Star Count**:
+
+### 1. [Prowler](https://github.com/prowler-cloud/prowler) [![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Python
+- **Description**: Leading open-source cloud security posture assessment tool for AWS, Azure, GCP, and Kubernetes. Features out-of-the-box continuous control monitoring packs mapped directly to **SOC 2, ISO 27001, CIS Benchmarks, NIST 800-53, and PCI-DSS**, generating audit-ready compliance reports and JSON/CSV evidence artifacts.
+
+### 2. [Checkov](https://github.com/bridgecrewio/checkov) [![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Python
+- **Description**: Static code analysis tool for Infrastructure as Code (Terraform, CloudFormation, Kubernetes, Helm, ARM Templates, Bicep) scanning against hundreds of security and compliance policies mapped directly to SOC 2 Common Criteria, preventing misconfigurations prior to deployment.
+
+### 3. [Steampipe](https://github.com/turbot/steampipe) [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers)
+- **License**: AGPL-3.0 | **Primary Language**: Go
+- **Description**: The extensible SQL console for cloud infrastructure and SaaS APIs. Leveraging the [steampipe-mod-soc2](https://github.com/turbot/steampipe-mod-aws-compliance) compliance suite, teams can execute automated SQL checks against AWS, GCP, GitHub, and Okta to query evidence and audit posture dynamically.
+
+### 4. [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) [![GitHub stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Python
+- **Description**: CNCF-incubated rules engine for cloud management and real-time compliance automation. Allows organizations to define declarative YAML policies that continuously detect, enforce, and remediate non-compliant SOC 2 cloud controls in AWS, Azure, and GCP environments.
+
+### 5. [Comp AI](https://github.com/trycompai/comp) [![GitHub stars](https://img.shields.io/github/stars/trycompai/comp?style=social&color=white)](https://github.com/trycompai/comp/stargazers)
+- **License**: AGPL-3.0 | **Primary Language**: TypeScript / Python
+- **Description**: Open-source autonomous compliance platform built as a self-hosted alternative to Vanta and Drata. Provides AI-powered policy drafting, automated evidence collection routines, background device security agent (macOS, Windows, Linux), and direct cloud integrations for SOC 2, ISO 27001, and HIPAA.
+
+### 6. [Comply (strongDM)](https://github.com/strongdm/comply) [![GitHub stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Go
+- **Description**: CLI-driven SOC 2 compliance automation framework. Formats compliance policies as Markdown, manages policy ticketing via Jira/GitHub Issues, and automates recurring audit evidence requests. *(Note: Low recent maintenance activity; verify scorecard before adopting).*
+
+### 7. [Probo](https://github.com/getprobo/probo) [![GitHub stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)
+- **License**: MIT | **Primary Language**: Go / TypeScript
+- **Description**: Modern, developer-friendly open-source compliance engine designed to achieve SOC 2 readiness rapidly. Features automated risk registers, AI-assisted policy generation, vendor risk assessments, and modular task orchestration with zero vendor lock-in.
+
+### 8. [Compliance Masonry (OpenControl)](https://github.com/opencontrol/compliance-masonry) [![GitHub stars](https://img.shields.io/github/stars/opencontrol/compliance-masonry?style=social&color=white)](https://github.com/opencontrol/compliance-masonry/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Go
+- **Description**: OpenControl command-line utility that compiles granular YAML-formatted control documentation, system architecture data, and audit evidence into structured System Security Plans (SSPs) and SOC 2 / NIST compliance packages.
+
+### 9. [Openlane Core](https://github.com/theopenlane/core) [![GitHub stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Go
+- **Description**: Enterprise-grade open-source system of record for compliance and GRC operations. Features unified control-to-framework cross-mapping, automated personnel directory syncing, trust center publishing, and cloud infrastructure evidence collectors.
+
+### 10. [MITRE Heimdall 2](https://github.com/mitre/heimdall2) [![GitHub stars](https://img.shields.io/github/stars/mitre/heimdall2?style=social&color=white)](https://github.com/mitre/heimdall2/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: TypeScript
+- **Description**: Security and compliance result viewer developed by MITRE. Aggregates and visualizes automated security validation and audit assessment findings from InSpec, Prowler, and CIS benchmarks into interactive compliance dashboards.
+
+### 11. [GovReady-Q](https://github.com/GovReady/govready-q) [![GitHub stars](https://img.shields.io/github/stars/GovReady/govready-q?style=social&color=white)](https://github.com/GovReady/govready-q/stargazers)
+- **License**: GPL-3.0 | **Primary Language**: Python
+- **Description**: Open-source GRC assessment server and automated compliance documentation questionnaire engine that guides DevOps engineers through control implementation and produces structured audit records.
+
+### 12. [NIST OSCAL CLI](https://github.com/usnistgov/oscal-cli) [![GitHub stars](https://img.shields.io/github/stars/usnistgov/oscal-cli?style=social&color=white)](https://github.com/usnistgov/oscal-cli/stargazers)
+- **License**: CC0-1.0 (Public Domain) | **Primary Language**: Java
+- **Description**: Official National Institute of Standards and Technology command-line tool for validating, converting, and processing Open Security Controls Assessment Language (OSCAL) documents, enabling standardized machine-readable SOC 2 and NIST evidence exchange.
+
+### 13. [Privateer (OpenSSF)](https://github.com/privateerproj/pvtr) [![GitHub stars](https://img.shields.io/github/stars/privateerproj/pvtr?style=social&color=white)](https://github.com/privateerproj/pvtr/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Go
+- **Description**: Open Source Security Foundation (OpenSSF) sandbox project under the ORBIT Working Group providing a plugin-based evaluation harness that validates compliance evidence using deterministic checks paired with secondary LLM analysis.
+
+### 14. [Evidentia](https://github.com/Polycentric-Labs/evidentia) [![GitHub stars](https://img.shields.io/github/stars/Polycentric-Labs/evidentia?style=social&color=white)](https://github.com/Polycentric-Labs/evidentia/stargazers)
+- **License**: Apache-2.0 | **Primary Language**: Python
+- **Description**: End-to-end OSCAL-native compliance automation CLI and library bundling 97 framework catalogs. Generates cryptographically signed evidence chains (Sigstore, PEP 740, SLSA provenance) and SARIF outputs for continuous CI/CD audit gates.
+
+### 15. [Blackfyre](https://github.com/blackfyre-security/blackfyre) [![GitHub stars](https://img.shields.io/github/stars/blackfyre-security/blackfyre?style=social&color=white)](https://github.com/blackfyre-security/blackfyre/stargazers)
+- **License**: AGPL-3.0 | **Primary Language**: Python
+- **Description**: Self-hosted multi-cloud compliance and security platform scanning AWS, Azure, and GCP against 670+ controls across 9 frameworks with SHA-256 evidence vaults and S3 Object Lock (WORM) storage.
+
+---
+
+## How to Contribute
+
+1. Fork this repository.
+2. Add or update entries in `README.md` adhering to the tabular/badge format and verified metrics.
+3. Submit a Pull Request detailing the product features, licensing, and pricing/star citations.
+
+---
+
+## Disclaimer
+
+- This repository is a community-maintained curated resource for research and engineering evaluation purposes; it does not constitute legal or formal audit advice.
+- Autonomous compliance platforms accelerate evidence harvesting and control monitoring, but an official SOC 2 Type I or Type II attestation requires examination by an independent licensed CPA firm.
+- Always review open-source repositories for maintenance activity, security disclosure policies, and scorecards before deploying them into production environments.
