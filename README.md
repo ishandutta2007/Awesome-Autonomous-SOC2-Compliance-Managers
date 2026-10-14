@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/banner.svg" alt="Awesome Autonomous SOC 2 Compliance Managers" width="100%" />
+<img src="assets/banner.svg" alt="Awesome Autonomous SOC 2 Compliance Managers" width="100%" />
 
 # 🛡️ Awesome Autonomous SOC 2 Compliance Managers & Security GRC Platforms ⚡
 
