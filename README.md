@@ -61,65 +61,65 @@ The table below compares leading commercial autonomous SOC 2 and GRC platforms, 
 
 Self-hosted and vendor-independent open-source tools for automating SOC 2 controls, scanning cloud security baselines, generating policies, and maintaining cryptographic audit evidence.
 
-Sorted in descending order by **GitHub Star Count**:
+Sorted in descending order by **GitHub Stars_Count**:
 
-### 1. 🔍 [Prowler](https://github.com/prowler-cloud/prowler) [![GitHub stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
+### 1. 🔍 [Prowler](https://github.com/prowler-cloud/prowler) [![GitHub_Stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Python
 - **Description**: Leading open-source cloud security posture assessment tool for AWS, Azure, GCP, and Kubernetes. Features out-of-the-box continuous control monitoring packs mapped directly to **SOC 2, ISO 27001, CIS Benchmarks, NIST 800-53, and PCI-DSS**, generating audit-ready compliance reports and JSON/CSV evidence artifacts.
 
-### 2. 🛡️ [Checkov](https://github.com/bridgecrewio/checkov) [![GitHub stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
+### 2. 🛡️ [Checkov](https://github.com/bridgecrewio/checkov) [![GitHub_Stars](https://img.shields.io/github/stars/bridgecrewio/checkov?style=social&color=white)](https://github.com/bridgecrewio/checkov/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Python
 - **Description**: Static code analysis tool for Infrastructure as Code (Terraform, CloudFormation, Kubernetes, Helm, ARM Templates, Bicep) scanning against hundreds of security and compliance policies mapped directly to SOC 2 Common Criteria, preventing misconfigurations prior to deployment.
 
-### 3. 📊 [Steampipe](https://github.com/turbot/steampipe) [![GitHub stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers)
+### 3. 📊 [Steampipe](https://github.com/turbot/steampipe) [![GitHub_Stars](https://img.shields.io/github/stars/turbot/steampipe?style=social&color=white)](https://github.com/turbot/steampipe/stargazers)
 - **License**: AGPL-3.0 | **Primary Language**: Go
 - **Description**: The extensible SQL console for cloud infrastructure and SaaS APIs. Leveraging compliance suites, teams can execute automated SQL checks against AWS, GCP, GitHub, and Okta to query evidence and audit posture dynamically.
 
-### 4. ☁️ [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) [![GitHub stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
+### 4. ☁️ [Cloud Custodian](https://github.com/cloud-custodian/cloud-custodian) [![GitHub_Stars](https://img.shields.io/github/stars/cloud-custodian/cloud-custodian?style=social&color=white)](https://github.com/cloud-custodian/cloud-custodian/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Python
 - **Description**: CNCF-incubated rules engine for cloud management and real-time compliance automation. Allows organizations to define declarative YAML policies that continuously detect, enforce, and remediate non-compliant SOC 2 cloud controls in AWS, Azure, and GCP environments.
 
-### 5. 🤖 [Comp AI](https://github.com/trycompai/comp) [![GitHub stars](https://img.shields.io/github/stars/trycompai/comp?style=social&color=white)](https://github.com/trycompai/comp/stargazers)
+### 5. 🤖 [Comp AI](https://github.com/trycompai/comp) [![GitHub_Stars](https://img.shields.io/github/stars/trycompai/comp?style=social&color=white)](https://github.com/trycompai/comp/stargazers)
 - **License**: AGPL-3.0 | **Primary Language**: TypeScript / Python
 - **Description**: Open-source autonomous compliance platform built as a self-hosted alternative to Vanta and Drata. Provides AI-powered policy drafting, automated evidence collection routines, background device security agent (macOS, Windows, Linux), and direct cloud integrations for SOC 2, ISO 27001, and HIPAA.
 
-### 6. 📝 [Comply (strongDM)](https://github.com/strongdm/comply) [![GitHub stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers)
+### 6. 📝 [Comply (strongDM)](https://github.com/strongdm/comply) [![GitHub_Stars](https://img.shields.io/github/stars/strongdm/comply?style=social&color=white)](https://github.com/strongdm/comply/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Go
 - **Description**: CLI-driven SOC 2 compliance automation framework. Formats compliance policies as Markdown, manages policy ticketing via Jira/GitHub Issues, and automates recurring audit evidence requests. *(Note: Low recent maintenance activity; verify scorecard before adopting).*
 
-### 7. 🎯 [Probo](https://github.com/getprobo/probo) [![GitHub stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)
+### 7. 🎯 [Probo](https://github.com/getprobo/probo) [![GitHub_Stars](https://img.shields.io/github/stars/getprobo/probo?style=social&color=white)](https://github.com/getprobo/probo/stargazers)
 - **License**: MIT | **Primary Language**: Go / TypeScript
 - **Description**: Modern, developer-friendly open-source compliance engine designed to achieve SOC 2 readiness rapidly. Features automated risk registers, AI-assisted policy generation, vendor risk assessments, and modular task orchestration with zero vendor lock-in.
 
-### 8. 🧱 [Compliance Masonry (OpenControl)](https://github.com/opencontrol/compliance-masonry) [![GitHub stars](https://img.shields.io/github/stars/opencontrol/compliance-masonry?style=social&color=white)](https://github.com/opencontrol/compliance-masonry/stargazers)
+### 8. 🧱 [Compliance Masonry (OpenControl)](https://github.com/opencontrol/compliance-masonry) [![GitHub_Stars](https://img.shields.io/github/stars/opencontrol/compliance-masonry?style=social&color=white)](https://github.com/opencontrol/compliance-masonry/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Go
 - **Description**: OpenControl command-line utility that compiles granular YAML-formatted control documentation, system architecture data, and audit evidence into structured System Security Plans (SSPs) and SOC 2 / NIST compliance packages.
 
-### 9. 🗂️ [Openlane Core](https://github.com/theopenlane/core) [![GitHub stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers)
+### 9. 🗂️ [Openlane Core](https://github.com/theopenlane/core) [![GitHub_Stars](https://img.shields.io/github/stars/theopenlane/core?style=social&color=white)](https://github.com/theopenlane/core/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Go
 - **Description**: Enterprise-grade open-source system of record for compliance and GRC operations. Features unified control-to-framework cross-mapping, automated personnel directory syncing, trust center publishing, and cloud infrastructure evidence collectors.
 
-### 10. 👁️ [MITRE Heimdall 2](https://github.com/mitre/heimdall2) [![GitHub stars](https://img.shields.io/github/stars/mitre/heimdall2?style=social&color=white)](https://github.com/mitre/heimdall2/stargazers)
+### 10. 👁️ [MITRE Heimdall 2](https://github.com/mitre/heimdall2) [![GitHub_Stars](https://img.shields.io/github/stars/mitre/heimdall2?style=social&color=white)](https://github.com/mitre/heimdall2/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: TypeScript
 - **Description**: Security and compliance result viewer developed by MITRE. Aggregates and visualizes automated security validation and audit assessment findings from InSpec, Prowler, and CIS benchmarks into interactive compliance dashboards.
 
-### 11. 📋 [GovReady-Q](https://github.com/GovReady/govready-q) [![GitHub stars](https://img.shields.io/github/stars/GovReady/govready-q?style=social&color=white)](https://github.com/GovReady/govready-q/stargazers)
+### 11. 📋 [GovReady-Q](https://github.com/GovReady/govready-q) [![GitHub_Stars](https://img.shields.io/github/stars/GovReady/govready-q?style=social&color=white)](https://github.com/GovReady/govready-q/stargazers)
 - **License**: GPL-3.0 | **Primary Language**: Python
 - **Description**: Open-source GRC assessment server and automated compliance documentation questionnaire engine that guides DevOps engineers through control implementation and produces structured audit records.
 
-### 12. 📜 [NIST OSCAL CLI](https://github.com/usnistgov/oscal-cli) [![GitHub stars](https://img.shields.io/github/stars/usnistgov/oscal-cli?style=social&color=white)](https://github.com/usnistgov/oscal-cli/stargazers)
+### 12. 📜 [NIST OSCAL CLI](https://github.com/usnistgov/oscal-cli) [![GitHub_Stars](https://img.shields.io/github/stars/usnistgov/oscal-cli?style=social&color=white)](https://github.com/usnistgov/oscal-cli/stargazers)
 - **License**: CC0-1.0 (Public Domain) | **Primary Language**: Java
 - **Description**: Official National Institute of Standards and Technology command-line tool for validating, converting, and processing Open Security Controls Assessment Language (OSCAL) documents, enabling standardized machine-readable SOC 2 and NIST evidence exchange.
 
-### 13. 🏴‍☠️ [Privateer (OpenSSF)](https://github.com/privateerproj/pvtr) [![GitHub stars](https://img.shields.io/github/stars/privateerproj/pvtr?style=social&color=white)](https://github.com/privateerproj/pvtr/stargazers)
+### 13. 🏴‍☠️ [Privateer (OpenSSF)](https://github.com/privateerproj/pvtr) [![GitHub_Stars](https://img.shields.io/github/stars/privateerproj/pvtr?style=social&color=white)](https://github.com/privateerproj/pvtr/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Go
 - **Description**: Open Source Security Foundation (OpenSSF) sandbox project under the ORBIT Working Group providing a plugin-based evaluation harness that validates compliance evidence using deterministic checks paired with secondary LLM analysis.
 
-### 14. 🔐 [Evidentia](https://github.com/Polycentric-Labs/evidentia) [![GitHub stars](https://img.shields.io/github/stars/Polycentric-Labs/evidentia?style=social&color=white)](https://github.com/Polycentric-Labs/evidentia/stargazers)
+### 14. 🔐 [Evidentia](https://github.com/Polycentric-Labs/evidentia) [![GitHub_Stars](https://img.shields.io/github/stars/Polycentric-Labs/evidentia?style=social&color=white)](https://github.com/Polycentric-Labs/evidentia/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Python
 - **Description**: End-to-end OSCAL-native compliance automation CLI and library bundling 97 framework catalogs. Generates cryptographically signed evidence chains (Sigstore, PEP 740, SLSA provenance) and SARIF outputs for continuous CI/CD audit gates.
 
-### 15. 🔥 [Blackfyre](https://github.com/blackfyre-security/blackfyre) [![GitHub stars](https://img.shields.io/github/stars/blackfyre-security/blackfyre?style=social&color=white)](https://github.com/blackfyre-security/blackfyre/stargazers)
+### 15. 🔥 [Blackfyre](https://github.com/blackfyre-security/blackfyre) [![GitHub_Stars](https://img.shields.io/github/stars/blackfyre-security/blackfyre?style=social&color=white)](https://github.com/blackfyre-security/blackfyre/stargazers)
 - **License**: AGPL-3.0 | **Primary Language**: Python
 - **Description**: Self-hosted multi-cloud compliance and security platform scanning AWS, Azure, and GCP against 670+ controls across 9 frameworks with SHA-256 evidence vaults and S3 Object Lock (WORM) storage.
 
