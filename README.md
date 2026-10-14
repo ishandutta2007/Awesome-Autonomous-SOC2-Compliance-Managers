@@ -61,7 +61,7 @@ The table below compares leading commercial autonomous SOC 2 and GRC platforms, 
 
 Self-hosted and vendor-independent open-source tools for automating SOC 2 controls, scanning cloud security baselines, generating policies, and maintaining cryptographic audit evidence.
 
-Sorted in descending order by **GitHub Stars_Count**:
+Sorted in descending order by **GitHub_Stars_Count**:
 
 ### 1. 🔍 [Prowler](https://github.com/prowler-cloud/prowler) [![GitHub_Stars](https://img.shields.io/github/stars/prowler-cloud/prowler?style=social&color=white)](https://github.com/prowler-cloud/prowler/stargazers)
 - **License**: Apache-2.0 | **Primary Language**: Python
